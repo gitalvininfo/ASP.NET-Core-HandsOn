@@ -50,6 +50,14 @@ app.UseEndpoints(endpoints =>
 
         await context.Response.WriteAsync($"In Employee - {name}");
     });
+
+
+    endpoints.MapGet("product/details/{id=1}", async (context) =>
+    {
+        int id = Convert.ToInt32(context.Request.RouteValues["id"]);
+
+        await context.Response.WriteAsync($"Product Details: {id}");
+    });
 });
 
 app.Run(async (HttpContext context) =>

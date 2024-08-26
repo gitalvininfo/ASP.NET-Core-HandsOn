@@ -12,9 +12,9 @@ app.Use(async (HttpContext context, RequestDelegate next) =>
 
     await next(context);
 
+
     await context.Response.WriteAsync("End of Middleware 1!\n");
 });
-
 
 // Old style of using middleware
 //app.UseMiddleware<CustomMiddleware>();

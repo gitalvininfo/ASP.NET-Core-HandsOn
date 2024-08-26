@@ -51,12 +51,18 @@ app.UseEndpoints(endpoints =>
         await context.Response.WriteAsync($"In Employee - {name}");
     });
 
-
-    endpoints.MapGet("product/details/{id=1}", async (context) =>
+    endpoints.MapGet("product/details/{id?}", async (context) =>
     {
-        int id = Convert.ToInt32(context.Request.RouteValues["id"]);
+        if (context.Request.RouteValues.ContainsKey("id"))
+        {
+            int id = Convert.ToInt32(context.Request.RouteValues["id"]);
 
-        await context.Response.WriteAsync($"Product Details: {id}");
+            await context.Response.WriteAsync($"Product Details: {id}");
+        }
+        else
+        {
+            await context.Response.WriteAsync($"Product Details Id not supplied");
+        }
     });
 });
 

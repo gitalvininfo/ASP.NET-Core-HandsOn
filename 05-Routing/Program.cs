@@ -43,7 +43,7 @@ app.UseEndpoints(endpoints =>
         await context.Response.WriteAsync($"In Files - {fileName}.{extension}");
     });
 
-    endpoints.MapGet("employee/profile/{name}", async (context) =>
+    endpoints.MapGet("employee/profile/{name:minlength(3):maxlength(10)}", async (context) =>
     {
 
         string? name = Convert.ToString(context.Request.RouteValues["name"]);

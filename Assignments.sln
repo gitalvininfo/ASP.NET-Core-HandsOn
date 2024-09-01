@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-Routing", "05-Routing\05
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-HTTP", "03-HTTP\03-HTTP.csproj", "{B7102103-0FBF-4634-9C1D-195BBA5CC44B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-Routing-Assignment", "05-Routing-Assignment\05-Routing-Assignment.csproj", "{261B20CB-ADD0-4F56-9851-811863AAE1E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-Routing-Assignment", "05-Routing-Assignment\05-Routing-Assignment.csproj", "{261B20CB-ADD0-4F56-9851-811863AAE1E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-Controllers-Assignment", "06-Controllers-Assignment\06-Controllers-Assignment.csproj", "{593E6BC8-954E-4AE7-9C9A-0A4EAE0C8A78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{261B20CB-ADD0-4F56-9851-811863AAE1E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{261B20CB-ADD0-4F56-9851-811863AAE1E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{261B20CB-ADD0-4F56-9851-811863AAE1E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593E6BC8-954E-4AE7-9C9A-0A4EAE0C8A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593E6BC8-954E-4AE7-9C9A-0A4EAE0C8A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593E6BC8-954E-4AE7-9C9A-0A4EAE0C8A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593E6BC8-954E-4AE7-9C9A-0A4EAE0C8A78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

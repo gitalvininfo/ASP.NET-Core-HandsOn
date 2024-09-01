@@ -47,4 +47,6 @@ app.MapGet("/countries/{countryId:min(101)}", async (HttpContext context) =>
     await context.Response.WriteAsync($"The CountryID should be between 1 and 100.");
 });
 
+// test commit from another machine ssh
+
 app.Run();

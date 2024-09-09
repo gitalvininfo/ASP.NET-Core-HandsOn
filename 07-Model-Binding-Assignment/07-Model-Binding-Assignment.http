@@ -1,0 +1,6 @@
+@_07_Model_Binding_Assignment_HostAddress = http://localhost:5210
+
+GET {{_07_Model_Binding_Assignment_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

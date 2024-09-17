@@ -1,0 +1,14 @@
+﻿@model List<WeatherReport>
+
+
+@foreach (var weather in Model)
+{
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">@weather.CityName - @weather.TemperatureFahrenheit</h5>
+            <h6 class="card-subtitle mb-2 text-muted">@weather.CityUniqueCode</h6>
+            <p class="card-text">@weather.DateAndTime.ToString("MMMM dd, yyyy h:mm tt")</p>
+            <a class="nav-link text-dark" asp-action="City" asp-route-cityCode="@weather.CityUniqueCode">Details</a>
+        </div>
+    </div>
+}

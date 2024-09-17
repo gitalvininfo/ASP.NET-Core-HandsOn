@@ -1,0 +1,20 @@
+﻿@model WeatherReport
+
+@if(Model != null)
+{
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">@Model.CityName - @Model.TemperatureFahrenheit</h5>
+            <h6 class="card-subtitle mb-2 text-muted">@Model.CityUniqueCode</h6>
+            <p class="card-text">@Model.DateAndTime.ToString("MMMM dd, yyyy h:mm tt")</p>
+        </div>
+    </div>
+}
+else
+{
+    <div class="alert alert-danger" role="alert">
+        BITCH!!! The city code is invalid!!!.
+    </div>
+}
+
+<a class="nav-link text-dark" asp-area="" asp-controller="Weather" asp-action="Index">Back</a>
